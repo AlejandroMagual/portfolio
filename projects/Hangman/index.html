@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <title>Hangman</title>
+</head>
+<body>
+    <!-- Canvas -->
+    <canvas id="canv" width="550" height="460"></canvas>
+    <!-- User Interface -->
+    <div class="userInterface">
+        <!-- Title -->
+        <div class="title">HANGMAN</div>
+        <!-- START Button -->
+        <button id="start" type="button" class="visible" onclick="start()">START</button>
+        <!-- Form Letter Input / SUBMIT Button / SOLVE PUZZLE Button -->
+        <form class="hide" id="letterInputForm">
+            ENTER SINGLE LETTER:<br>
+            <input type="text" id="letterInput">
+            <button type="button" onclick="checkLetterInput()">SUBMIT</button>
+            <button type="button" onclick="showWordInputForm()">SOLVE PUZZLE</button>
+        </form>
+        <!-- Form SOLVE PUZZLE-->
+        <form class="hide" id="wordInputForm">
+            ENTER WORD:<br>
+            <input type="text" id="wordInput">
+            <button type="button" onclick="checkWordInput()">SUBMIT</button><br>
+        </form>
+        <!-- Display Correctly Guessed Letters -->
+        <pre id="correctGuessDisplay"></pre>
+        <!-- Display Correctly Guessed Letters -->
+            <div class="crossedLettersDiv">
+                <pre id="incorrectGuessDisplay"></pre>
+                <pre id="crossingDisplay"></pre>
+            </div>
+        <!-- Display Game Lost Message -->
+        <p id="gameLostDisplay" class="hide">YOU HAVE LOST THE GAME!</p>
+        <!-- Display Game Win Message -->
+        <p id="gameWinDisplay" class="hide">YOU HAVE WON THE GAME!</p>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

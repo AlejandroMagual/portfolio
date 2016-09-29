@@ -1,0 +1,58 @@
+canvas {
+    position: absolute;
+}
+.userInterface {
+    border: 2px solid blue;
+    position: absolute;
+    left: 580px;
+    top: 15px;
+    height: 440px;
+    width: 550px;
+}
+.title {
+    font-size: 40px;
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: blue;
+    color: white;
+}
+button, input {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+form {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+p {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#correctGuessDisplay {
+    font-size: 30px;
+}
+.visible {
+    display: block;
+}
+.hide {
+    display: none;
+}
+.crossedLettersDiv {
+    position: relative;
+}
+#incorrectGuessDisplay {
+    position: absolute;
+    font-size: 30px;
+    margin: 0;
+}
+#crossingDisplay {
+    font-size: 30px;
+    color: red;
+    margin: 0;
+}
